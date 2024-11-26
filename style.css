@@ -273,6 +273,7 @@ img{
 }
 .box-exp li{
     margin-top: 15px;
+    margin-bottom: 10px;
 }
 /* Section stage */
 .section-stage{
@@ -392,9 +393,11 @@ img{
         height: 900px;
         margin-top: 20px;
     }
+
     /* Responsive - Stage */
     .section-stage{
-        padding: 3rem 2rem;
+        padding: 2rem 2rem;
+        padding-top: 5rem;
     }
     .contain-stage{
         flex-direction: column;
