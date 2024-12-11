@@ -1,0 +1,307 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+    height: 3000px;
+}
+@font-face {
+    font-family: "TekturNarrow-Bold";
+    src:url("font/TekturNarrow-Bold.ttf") format("opentype");
+}
+
+/*HEADER*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+.moi{
+    font-family: TekturNarrow-Bold;
+    font-size: 18px;
+    color: white;
+    padding: 20px;
+}
+a {
+    text-decoration: none; /* Enlève le soulignement */
+    border: none; /* Supprime les bordures par défaut */
+    display: inline-block; /* Assure que le lien se comporte comme un bloc en ligne pour l'image */
+}
+.card, .screen{
+    max-width: 60px; /* Ajuste la taille si nécessaire */
+    margin-left: 10px; /* Espace entre les images */
+
+}
+.header-right{
+    display: flex;
+    align-items: center;
+}
+
+.barre-blanche {
+    height: 1px; /* Ajuste la hauteur de la barre */
+    background-color: white;
+    width: 80%;
+    margin: 0 auto;
+}
+
+h1{
+    font-family: TekturNarrow-Bold;
+    color: white;
+    text-align: center;
+}
+
+
+.modele {
+    margin-top: 40px;
+    margin-left: 50px;
+    margin-right: 50px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px; /* Ajoute un padding à gauche et à droite pour éviter que les boîtes ne soient collées */
+    
+}
+
+.amd_box, .nvidia_box, .intel_box {
+    width: 25%;
+    height: 500px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    position: relative; /* Permet le positionnement absolu à l'intérieur */
+
+}
+
+.amd_box img,.nvidia_box img,.intel_box img {
+    max-height: 100%; /* L'image ne dépassera pas la hauteur de la boîte */
+    filter: blur(6px);
+}
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Centre le texte */
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent pour le texte */
+    padding: 15px;
+    border-radius: 8px;
+    font-family: TekturNarrow-Bold;
+
+}
+.overlay-text li {
+    margin-bottom: 20px; /* Ajuste la valeur pour l'espacement souhaité */
+    list-style: none; /* Supprime les puces si nécessaire */
+}
+
+.container {
+    display: flex;
+    justify-content: space-between; /* Place les éléments aux extrémités gauche et droite */
+    align-items: center; /* Centre verticalement */
+    padding: 20px;
+    width: 80%;
+    margin: 0 auto; /* Centre le conteneur horizontalement */
+}
+
+.description {
+    font-family: TekturNarrow-Bold;
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    border-radius: 10px;
+    width: 60%; /* Ajuste la largeur pour qu'elle prenne 60% de l'espace */
+    margin-right: 20px; /* Espace entre description et logo */
+    padding: 20px;
+}
+
+.logo {
+    text-align: right;
+    width: 30%; /* Ajuste la largeur pour qu'elle prenne 30% de l'espace */
+}
+
+.logo img {
+    width: 200px;
+    margin-left: 10px; /* Espace entre les images */
+}
+
+
+
+.box {
+    background-color: aliceblue;
+    width: 400px;
+    height: 400px;
+    border-radius: 32% 68% 34% 66% / 22% 30% 70% 78%;
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Permet d'utiliser position:absolute pour l'image */
+    overflow: hidden; /* Cache tout débordement de l'image */
+}
+
+.box img {
+    height: 200%;
+    object-fit: contain; /* Assure que l'image s'adapte à la boîte sans la déformer */
+    position: absolute;
+    z-index: 0; /* S'assure que l'image reste sous la boîte */
+}
+
+
+.contain-techno {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligne le texte et les images en haut */
+}
+
+.technologie {
+    font-family: TekturNarrow-Bold;
+    font-size: 20px;
+    color: white;
+    margin-left: 180px;
+    text-align: left;
+    width: 35%;
+    margin-top: 100px;
+}
+
+.img-cyber {
+    display: flex;
+    flex-direction: column; /* Pour empiler les images verticalement */
+    align-items: center; /* Centre les images horizontalement */
+    margin-right: 180px;
+}
+
+.cyber {
+    width: 800px; /* Assure que les images ont la même largeur que la div */
+    margin-bottom: 20px; /* Ajoute de l'espace entre les images */
+}
+
+
+
+img.overclock {
+    float: left; /* Fait flotter l'image à gauche */
+    width: 40%; /* Ajuste la largeur de l'image */
+    margin-left: 50px;
+}
+
+.text_overclock {
+    font-family: TekturNarrow-Bold;
+    font-size: 20px;
+    margin-right: 30px;
+    margin-top: 30px;
+    width: 45%; /* Limite la largeur du texte pour qu'il soit à côté de l'image */
+    float: right; /* Place le texte à droite */
+    color: white;
+}
+
+.container-amd{
+    display: flex;
+    justify-content: space-between;
+}
+.amd-img{
+    max-width: 800px;
+}
+.tableau{
+    display: flex;
+
+    justify-content: center;
+}
+
+.text-amd{
+    width: 500px;
+    height: 400px;
+    margin-top: 40px;
+    margin-right: 300px;
+    margin-bottom: 70px;
+    color: white;
+    font-family: TekturNarrow-Bold;
+    font-size: 20px;
+
+}
+
+.contain-overclock {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; /* Aligne le texte et l'image en haut */
+    margin: 30px;
+}
+
+.overclock {
+    min-width: 700px; /* Ajuste la largeur de l'image */
+    margin-right: 20px; /* Espace entre l'image et le texte */
+}
+
+.text-overclock {
+    font-family: TekturNarrow-Bold;
+    font-size: 18px;
+    color: white;
+    width: 50%; /* Ajuste la largeur du texte */
+    text-align: left;
+    margin-top: 60px;
+}
+
+
+
+
+/* Page articles */
+.contain-article{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+section{
+    background-color: rgb(24, 24, 24);
+    width: 90%;
+    min-height: 300px;
+    margin-top: 40px;
+    border-radius: 15px;
+    padding: 30px;
+    position: relative;
+}
+.text-article{
+    font-family: TekturNarrow-Bold;
+    color: white;
+    text-align: center;
+    margin-top: 20px;
+}
+
+h4{
+    font-family: TekturNarrow-Bold;
+    color: white;
+    position: absolute; /* Permet de le positionner par rapport au parent */
+    bottom: 10px; /* Distance du bas de la section */
+    right: 10px; /* Distance du bord droit */
+    margin: 0; /* Supprime les marges par défaut */
+}
+button{
+    width: 7%;
+    height: 30px;
+    position: absolute; /* Permet de le positionner par rapport au parent */
+    bottom: 10px; /* Distance du bas de la section */
+    left: 10px; /* Distance du bord droit */
+    margin: 0; /* Supprime les marges par défaut */
+    font-family: TekturNarrow-Bold;
+    color: white;
+    background-color: green;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+}
+section img{
+    display: none;
+    width: 30px;
+}
+@media (max-width: 1640px) {
+    button span {
+        display: none; /* Cacher le texte si l'écran est trop petit */
+    }
+
+    section img {
+        display: inline-block; /* Montrer l'icône */
+    }
+}
